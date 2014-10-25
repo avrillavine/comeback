@@ -29,12 +29,56 @@
               <block type="movement_right" id="8"></block>
             </statement>
             <next>
-              <block type="robot_delay" id="9" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="10">
-                    <field name="NUM">250</field>
+              <block type="controls_if" id="31" inline="false">
+                <value name="IF0">
+                  <block type="logic_compare" id="32" inline="true">
+                    <field name="OP">GT</field>
+                    <value name="A">
+                      <block type="sensor_light" id="33">
+                        <field name="LIGHT">RIGHT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="34">
+                        <field name="NUM">30</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
+                <statement name="DO0">
+                  <block type="movement_left" id="45"></block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="46" inline="false">
+                    <value name="IF0">
+                      <block type="logic_compare" id="47" inline="true">
+                        <field name="OP">GT</field>
+                        <value name="A">
+                          <block type="sensor_light" id="48">
+                            <field name="LIGHT">REAR</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="49">
+                            <field name="NUM">30</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="movement_reverse" id="70"></block>
+                    </statement>
+                    <next>
+                      <block type="robot_delay" id="9" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="10">
+                            <field name="NUM">250</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
