@@ -45,16 +45,7 @@
                           <block type="oled_drawtext" id="210">
                             <field name="TEXT">light left</field>
                             <next>
-                              <block type="robot_delay" id="215" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="216">
-                                    <field name="NUM">250</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="oled_cleardisplay" id="217"></block>
-                                </next>
-                              </block>
+                              <block type="oled_cleardisplay" id="217"></block>
                             </next>
                           </block>
                         </next>
@@ -101,16 +92,7 @@
                               <block type="oled_drawtext" id="209">
                                 <field name="TEXT">light right</field>
                                 <next>
-                                  <block type="robot_delay" id="213" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="214">
-                                        <field name="NUM">250</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="oled_cleardisplay" id="218"></block>
-                                    </next>
-                                  </block>
+                                  <block type="oled_cleardisplay" id="218"></block>
                                 </next>
                               </block>
                             </next>
@@ -157,16 +139,7 @@
                                   <block type="oled_drawtext" id="208">
                                     <field name="TEXT">light rear</field>
                                     <next>
-                                      <block type="robot_delay" id="211" inline="true">
-                                        <value name="DELAY">
-                                          <block type="math_number" id="212">
-                                            <field name="NUM">250</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="oled_cleardisplay" id="219"></block>
-                                        </next>
-                                      </block>
+                                      <block type="oled_cleardisplay" id="219"></block>
                                     </next>
                                   </block>
                                 </next>
