@@ -26,7 +26,43 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_left" id="13"></block>
+              <block type="movement_left" id="13">
+                <next>
+                  <block type="oled_setcursor" id="80" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="81">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="82">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_cleardisplay" id="163">
+                        <next>
+                          <block type="oled_drawtext" id="210">
+                            <field name="TEXT">light left</field>
+                            <next>
+                              <block type="robot_delay" id="215" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="216">
+                                    <field name="NUM">250</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_cleardisplay" id="217"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
             </statement>
             <next>
               <block type="controls_if" id="9" inline="false">
@@ -46,7 +82,43 @@
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_right" id="8"></block>
+                  <block type="movement_right" id="8">
+                    <next>
+                      <block type="oled_setcursor" id="92" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="93">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="94">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="oled_cleardisplay" id="164">
+                            <next>
+                              <block type="oled_drawtext" id="209">
+                                <field name="TEXT">light right</field>
+                                <next>
+                                  <block type="robot_delay" id="213" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="214">
+                                        <field name="NUM">250</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="oled_cleardisplay" id="218"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </statement>
                 <next>
                   <block type="controls_if" id="14" inline="false">
@@ -66,7 +138,43 @@
                       </block>
                     </value>
                     <statement name="DO0">
-                      <block type="movement_reverse" id="18"></block>
+                      <block type="movement_reverse" id="18">
+                        <next>
+                          <block type="oled_setcursor" id="95" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="96">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="97">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_cleardisplay" id="165">
+                                <next>
+                                  <block type="oled_drawtext" id="208">
+                                    <field name="TEXT">light rear</field>
+                                    <next>
+                                      <block type="robot_delay" id="211" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="212">
+                                            <field name="NUM">250</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="oled_cleardisplay" id="219"></block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
                     </statement>
                     <next>
                       <block type="robot_delay" id="19" inline="true">
