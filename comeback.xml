@@ -26,11 +26,7 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_left" id="13">
-                <next>
-                  <block type="movement_forward" id="31"></block>
-                </next>
-              </block>
+              <block type="movement_left" id="13"></block>
             </statement>
             <next>
               <block type="controls_if" id="9" inline="false">
@@ -50,11 +46,7 @@
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_right" id="8">
-                    <next>
-                      <block type="movement_forward" id="41"></block>
-                    </next>
-                  </block>
+                  <block type="movement_right" id="8"></block>
                 </statement>
                 <next>
                   <block type="controls_if" id="14" inline="false">
